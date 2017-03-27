@@ -7,7 +7,8 @@ var {Link, IndexLink} = require('react-router');
 var SubmissionList = React.createClass({
   getInitialState: function (){
     return {
-      isLoading: false
+      isLoading: false,
+      activeTabClassName: "tab2"
     }
   },
   handleSubmissions: function (id){
@@ -70,7 +71,7 @@ var SubmissionList = React.createClass({
 
     return (
       <div>
-        <AssignmentNav id={id} />
+        <AssignmentNav id={id} active={this.state.activeTabClassName} />
         <div className="row well">
           {renderSubmissions()}
           {renderError()}

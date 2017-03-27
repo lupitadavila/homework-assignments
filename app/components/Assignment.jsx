@@ -1,12 +1,13 @@
 var React = require('react');
 var edmodoAssignmentAPI = require('edmodoAssignmentAPI');
 var AssignmentContent = require('AssignmentContent');
-
+var AssignmentNav = require('AssignmentNav');
 
 var Assignment = React.createClass({
   getInitialState: function (){
     return {
-      isLoading: false
+      isLoading: false,
+      activeTabClassName: "tab1"
     }
   },
   handleAssignment: function (id){
@@ -37,14 +38,12 @@ var Assignment = React.createClass({
     console.log(id);
     if(id && id.length > 0){
       this.handleAssignment(id);
-      // window.location.hash = '#/';
     }
   },
   componentWillReceiveProps: function (newProps) {
     var id = newProps.params.id;
     if(id && id.length > 0){
       this.handleAssignment(id);
-      // window.location.hash = '#/';
     }
   },
   render: function () {
@@ -68,8 +67,11 @@ var Assignment = React.createClass({
 
     return (
       <div>
-        {renderAssignment()}
-        {renderError()}
+        <AssignmentNav id={id} active={this.state.activeTabClassName} />
+        <div className="row well">
+          {renderAssignment()}
+          {renderError()}
+        </div>
       </div>
     )
   }

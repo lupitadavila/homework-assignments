@@ -1,18 +1,18 @@
 var React = require('react');
 var {Link, IndexLink} = require('react-router');
 
-var AssignmentNav = ({id}) => {
+var AssignmentNav = ({id, active}) => {
     return (
-      <div className="row">
+      <nav className="row nav-assignment">
         <ul className="nav nav-tabs">
-          <li role="presentation" activeClassName="active">
+          <li role="presentation" className={(active === "tab1") ? "active" : ""}>
             <Link to={`/assignments/${id}`}>Assignment</Link>
           </li>
-          <li role="presentation" activeClassName="active">
+          <li role="presentation" className={(active === "tab2") ? "active" : ""}>
             <Link to={`/assignments/${id}/submissions`}>Submissions</Link>
           </li>
         </ul>
-      </div>
+      </nav>
     );
   };
 
