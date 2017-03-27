@@ -1,5 +1,6 @@
 var React = require('react');
 var edmodoSubmissionsAPI = require('edmodoSubmissionsAPI');
+var SubmissionsContent = require('SubmissionsContent');
 var {Link, IndexLink} = require('react-router');
 
 var SubmissionList = React.createClass({
