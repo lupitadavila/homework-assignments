@@ -11,3 +11,13 @@
     }
   }
 }
+
+.submission{
+  padding: 30px;
+  &:hover{
+    background: #dedede;
+  }
+}
+.submission-content{
+  padding: 20px;
+}

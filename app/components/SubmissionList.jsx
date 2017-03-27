@@ -1,6 +1,7 @@
 var React = require('react');
 var edmodoSubmissionsAPI = require('edmodoSubmissionsAPI');
 var SubmissionsContent = require('SubmissionsContent');
+var AssignmentNav = require('AssignmentNav');
 var {Link, IndexLink} = require('react-router');
 
 var SubmissionList = React.createClass({
@@ -53,7 +54,8 @@ var SubmissionList = React.createClass({
         return <h3 className="text-center">Fetching submissions...</h3>;
       } else if (submissions) {
         return submissions.map(function(submission, i){
-          return <div>{ submission.content }</div>;
+          console.log(submission);
+          return <SubmissionsContent submission={submission} />;
         });
       }
     }
@@ -67,9 +69,12 @@ var SubmissionList = React.createClass({
     }
 
     return (
-      <div className="list-group">
-        {renderSubmissions()}
-        {renderError()}
+      <div>
+        <AssignmentNav id={id} />
+        <div className="row well">
+          {renderSubmissions()}
+          {renderError()}
+        </div>
       </div>
     )
   }

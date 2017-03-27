@@ -4,7 +4,7 @@ var AssignmentNav = require('AssignmentNav');
 var AssignmentContent = ({assignment}) => {
   return (
     <div>
-      <AssignmentNav assignment={assignment} />
+      <AssignmentNav id={assignment.id} />
       <div className="row well">
         <h2>{ assignment.title }</h2>
         <p>{ assignment.due_date }</p>
