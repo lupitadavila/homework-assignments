@@ -41,7 +41,6 @@ var AssignmentList = React.createClass({
         return <h3 className="text-center">Fetching assignments...</h3>;
       } else if (assignments) {
         return assignments.map(function(assignment, i){
-          console.log(assignment, i);
           return <Link to={`/assignments/${assignment.id}`} key={i} className="list-group-item assignment-link" activeClassName="active">{ assignment.title }<span className="date">{ assignment.due_at }</span></Link>;
         });
       }
