@@ -1,5 +1,6 @@
 var React = require('react');
 var AssignmentNav = require('AssignmentNav');
+var moment = require('moment');
 
 var SubmissionsContent = React.createClass({
   onSubmissionClick: function(e){
@@ -19,7 +20,7 @@ var SubmissionsContent = React.createClass({
           <div className="col-md-4"><img src={ submission.creator.avatars.large } alt="" /></div>
           <div className="col-md-8">
             <h3>{`${ submission.creator.first_name } ${ submission.creator.last_name }`}</h3>
-            <p>{`Turned in ${ submission.submitted_at }`}</p>
+            <p>{`Turned in ${ moment(submission.submitted_at).format("dddd, MMMM Do YYYY") }`}</p>
           </div>
         </div>
         <div className="collapse submission-content" id={ submission.id }>

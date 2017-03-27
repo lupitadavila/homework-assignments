@@ -1,5 +1,6 @@
 var React = require('react');
 var edmodoAssignmentAPI = require('edmodoAssignmentAPI');
+var moment = require('moment');
 var {Link, IndexLink} = require('react-router');
 
 var AssignmentList = React.createClass({
@@ -41,7 +42,7 @@ var AssignmentList = React.createClass({
         return <h3 className="text-center">Fetching assignments...</h3>;
       } else if (assignments) {
         return assignments.map(function(assignment, i){
-          return <Link to={`/assignments/${assignment.id}`} key={i} className="list-group-item assignment-link" activeClassName="active">{ assignment.title }<span className="date">{ assignment.due_at }</span></Link>;
+          return <Link to={`/assignments/${assignment.id}`} key={i} className="list-group-item assignment-link" activeClassName="active">{ assignment.title }<span className="date"> { moment(assignment.due_at).format("dddd, MMMM Do YYYY") }</span></Link>;
         });
       }
     }
