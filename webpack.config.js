@@ -22,6 +22,7 @@ module.exports = {
     root: __dirname,
     alias: {
       Main: 'app/components/Main.jsx',
+      SelectAssignment: 'app/components/SelectAssignment.jsx',
       AssignmentList: 'app/components/AssignmentList.jsx',
       Assignment: 'app/components/Assignment.jsx',
       AssignmentContent: 'app/components/AssignmentContent.jsx',
