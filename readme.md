@@ -7,9 +7,5 @@
 selected assignment.
 * A teacher can expand a student submission in place to see the submission content.
 
-## Components
-* AssignmentList
-* Assignment
-* Content
-* SubmissionList
-* Submission
+## Deployed on Heroku
+[Live Link](http://polar-dawn-64352.herokuapp.com)
