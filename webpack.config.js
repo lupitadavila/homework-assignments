@@ -25,6 +25,7 @@ module.exports = {
       AssignmentList: 'app/components/AssignmentList.jsx',
       Assignment: 'app/components/Assignment.jsx',
       AssignmentContent: 'app/components/AssignmentContent.jsx',
+      AssignmentNav: 'app/components/AssignmentNav.jsx',
       edmodoAssignmentAPI: 'app/api/edmodoAssignmentAPI.jsx',
       // Weather: 'app/components/Weather.jsx',
       // WeatherMessage: 'app/components/WeatherMessage.jsx',

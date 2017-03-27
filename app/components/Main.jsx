@@ -5,17 +5,13 @@ var Main = (props) => {
   return (
     <div>
       <div className="container">
+        <h1>Homework App</h1>
         <div className="row">
           <div className="col-md-4">
             <AssignmentList/>
           </div>
           <div className="col-md-8">
-            <div className="row">
-              Navbar
-            </div>
-            <div className="row well">
-              {props.children}
-            </div>
+            {props.children}
           </div>
         </div>
       </div>
