@@ -23,7 +23,8 @@ module.exports = {
     alias: {
       Main: 'app/components/Main.jsx',
       AssignmentList: 'app/components/AssignmentList.jsx',
-      EdmodoAssignment: 'app/api/EdmodoAssignment.jsx',
+      Assignment: 'app/components/Assignment.jsx',
+      edmodoAssignmentAPI: 'app/api/edmodoAssignmentAPI.jsx',
       // Weather: 'app/components/Weather.jsx',
       // WeatherMessage: 'app/components/WeatherMessage.jsx',
       // WeatherForm: 'app/components/WeatherForm.jsx',
