@@ -13,8 +13,7 @@ var Main = (props) => {
             <div className="row">
               Navbar
             </div>
-            <div className="row">
-              <p className="well">Main.jsx rendered</p>
+            <div className="row well">
               {props.children}
             </div>
           </div>
