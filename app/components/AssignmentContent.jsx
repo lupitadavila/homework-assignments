@@ -1,6 +1,7 @@
 var React = require('react');
 var AssignmentNav = require('AssignmentNav');
 
+
 var AssignmentContent = ({assignment}) => {
   return (
     <div className="assignment-content">
