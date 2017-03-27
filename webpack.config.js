@@ -27,13 +27,7 @@ module.exports = {
       AssignmentContent: 'app/components/AssignmentContent.jsx',
       AssignmentNav: 'app/components/AssignmentNav.jsx',
       edmodoAssignmentAPI: 'app/api/edmodoAssignmentAPI.jsx',
-      // Weather: 'app/components/Weather.jsx',
-      // WeatherMessage: 'app/components/WeatherMessage.jsx',
-      // WeatherForm: 'app/components/WeatherForm.jsx',
-      // About: 'app/components/About.jsx',
-      // Examples: 'app/components/Examples.jsx',
-      // openWeatherMap: 'app/api/openWeatherMap.jsx',
-      // ErrorModal: 'app/components/ErrorModal.jsx',
+      edmodoSubmissionsAPI: 'app/api/edmodoSubmissionsAPI.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']
