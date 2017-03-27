@@ -5,7 +5,9 @@ var Main = (props) => {
   return (
     <div>
       <div className="container">
-        <h1>Homework App</h1>
+        <header>
+          <h1>Homework App</h1>
+        </header>
         <div className="row">
           <div className="col-md-4">
             <AssignmentList/>
