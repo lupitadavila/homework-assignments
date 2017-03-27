@@ -42,7 +42,7 @@ var AssignmentList = React.createClass({
       } else if (assignments) {
         return assignments.map(function(assignment, i){
           console.log(assignment, i);
-          return <Link to={`/assignment/${assignment.id}`} key={i} className="list-group-item assignment-link" activeClassName="active">{ assignment.title }<span className="date">{ assignment.due_at }</span></Link>;
+          return <Link to={`/assignments/${assignment.id}`} key={i} className="list-group-item assignment-link" activeClassName="active">{ assignment.title }<span className="date">{ assignment.due_at }</span></Link>;
         });
       }
     }
