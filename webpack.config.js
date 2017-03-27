@@ -22,7 +22,8 @@ module.exports = {
     root: __dirname,
     alias: {
       Main: 'app/components/Main.jsx',
-      // Nav: 'app/components/Nav.jsx',
+      AssignmentList: 'app/components/AssignmentList.jsx',
+      EdmodoAssignment: 'app/api/EdmodoAssignment.jsx',
       // Weather: 'app/components/Weather.jsx',
       // WeatherMessage: 'app/components/WeatherMessage.jsx',
       // WeatherForm: 'app/components/WeatherForm.jsx',
