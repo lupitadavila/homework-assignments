@@ -1,5 +1,6 @@
 var React = require('react');
 var edmodoAssignmentAPI = require('edmodoAssignmentAPI');
+var AssignmentContent = require('AssignmentContent');
 
 var Assignment = React.createClass({
   getInitialState: function (){
@@ -52,13 +53,7 @@ var Assignment = React.createClass({
       if (isLoading) {
         return <h3 className="text-center">Fetching assignment...</h3>;
       } else if (assignment) {
-        return (
-          <div>
-            <h1>{ assignment.title }</h1>
-            <p>{ assignment.due_at }</p>
-            <p>{ assignment.description }</p>
-          </div>
-        )
+        return <AssignmentContent title={ assignment.title } description={ assignment.description } due={ assignment.due_at } />
       }
     }
 
