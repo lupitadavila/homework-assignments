@@ -1,0 +1,13 @@
+.assignment-link{
+  font-size: 22px;
+  .date{
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+
+    &:before{
+      content: "Due Date: ";
+      font-weight: bold;
+    }
+  }
+}

@@ -11,6 +11,7 @@ require('style!css!sass!applicationStyles')
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
+      <Route path="assignment/:id" component={Assignment}/>
       <IndexRoute component={Assignment}/>
     </Route>
   </Router>,

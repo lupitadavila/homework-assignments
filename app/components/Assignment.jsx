@@ -1,5 +1,5 @@
 var React = require('react');
-
+var edmodoAssignmentAPI = require('edmodoAssignmentAPI');
 
 var Assignment = React.createClass({
   render: function () {
