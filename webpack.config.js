@@ -26,6 +26,7 @@ module.exports = {
       Assignment: 'app/components/Assignment.jsx',
       AssignmentContent: 'app/components/AssignmentContent.jsx',
       AssignmentNav: 'app/components/AssignmentNav.jsx',
+      SubmissionList: 'app/components/SubmissionList.jsx',
       edmodoAssignmentAPI: 'app/api/edmodoAssignmentAPI.jsx',
       edmodoSubmissionsAPI: 'app/api/edmodoSubmissionsAPI.jsx',
       applicationStyles: 'app/styles/app.scss'
